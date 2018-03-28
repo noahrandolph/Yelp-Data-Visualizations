@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<script src="button.js"></script>
+
+<body>
+<h1>Entrepreneur’s Scouting Tool</h1>
+
+<div class="buttons-wrapper">
+  <button type="button" aria-pressed="true" class="home">
+    <span class="icon">&#43;</span>
+    <span class="text">Home</span>
+  </button>
+  <button type="button" aria-pressed="true" class="data">
+    <span class="icon">&#43;</span>
+    <span class="text">Data Sources</span>
+  </button>
+  <button type="button" aria-pressed="true" class="distribution">
+    <span class="icon">&#43;</span>
+    <span class="text"><a href="distribution.html">Business Distribution</a></span>
+  </button>
+  <button type="button" aria-pressed="true" class="ml">
+    <span class="icon">&#43;</span>
+    <span class="text">Machine Learning</span>
+  </button>
+  <button type="button" aria-pressed="true" class="us">
+    <span class="icon">&#43;</span>
+    <span class="text">About Us</span>
+  </button>
+</div>
+
+<h2>Our project’s primary concept is to utilize Yelp data (from Kaggle), population data (from the Census Bureau), and potentially household income data to help entrepreneurs find optimal locations to start businesses. We envision a map that will display the results of our processes for determining which business categories are recommended in a particular area. Our process will consider the Yelp data of businesses in each zip code (including business categories like barber shop, Mexican restaurant, coffee shop, etc.) and compare the number of businesses in each zip code to the zip code populations. Then it will compute for each zip code the average number of businesses in each category per capita and compare it to the average over the dataset for that category. For example, if someone were trying to decide where in a city to start a coffee shop, the map could indicate that a certain zip code has twice the number of coffee shops per capita than the average, while a zip code across the city with far below the average number of coffee shops per capita might be a better opportunity.</h2>
+</body>
+
+</html>
