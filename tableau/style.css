@@ -80,8 +80,8 @@ button.us {
 button.ml {
   background-color: #007d47;
 }
-button.city {
-  background-color: #A6ACAF;;
+button.mining {
+  background-color: #A6ACAF;
 }
 button:hover {
   -webkit-transform: scale(1.08);
