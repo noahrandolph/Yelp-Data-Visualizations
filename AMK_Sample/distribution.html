@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title="An Entrepreneur’s Scouting Tool">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/viz.css">
+  </head>
+  <body>
+    <div id="header">
+    <h2 id='TitleHead'>An Entrepreneur’s Scouting Tool</h2>
+      <div id="links">
+        <a href="index.html">About Our Project</a>
+        <a href="#Data">Data Sources</a>
+        <a href="distribution.html" class='active'>Business Distributions</a>
+        <a href="#ML">Machine Learning</a>
+        <a href="#AboutUs">The Team</a>
+      </div>
+    </div>
+    <div id='description'>
+          <div id="BodyText">
+            <h3><u>Business Distributions</u></h3>
+            <p>
+              This page is to utilize Yelp Business data (from Kaggle) to help user to view business distribution in certain zip codes. A map will display the results of business in selected zip code areas, user can visually find out which businesses are established and which are missing from interested areas.
+            </p>
+            <p>
+              Business Distribution: since Yelp dataset has information regarding business's location (state, city), zip code and its belonging category, we manually selected 17 categories and put each business into one category.
+              From the right panel, you can select state from a drop-down list, relevant cities will be shown from another drop-down list. After chose city, its zip codes will be listed in the 3rd cascade filter, chose one or more, finally chose business categories, the relevant business with certain zip codes will be displayed on the left map. You might need to zoom in/out to locate the state and city then find business information. Business categories are color coded as shown on the right panel.
+            </p>
+            <p>
+              Business Yelp Review: means to show Yelp evaluation for user to estimate investment opportunity. We incorporate Yelp review counts and stars data. Select one or more states from drop-down list, relevant cities will be shown in the drop-down list.Afterwards its zip codes will be listed in the 3rd cascade filter. The categories are listed on the right panel with color encoded. Be noted cities and its related data are distributed nationally but do not cover all in the United States. Yelp free dataset are pre-filtered and cleaned so that can be used for non-commercial purporse. It is not a full dataset.
+            </p>
+          </div>
+        <div class='tableauPlaceholder' id='viz1522359091024'>
+          <noscript>
+            <a href='#'>
+              <img alt='Yelp Businesses ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ye&#47;yelp-test&#47;YelpBusinesses&#47;1_rss.png' style='border: none' />
+            </a>
+          </noscript>
+              <object class='tableauViz'  style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='yelp-test&#47;YelpBusinesses' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;ye&#47;yelp-test&#47;YelpBusinesses&#47;1.png' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='filter' value='publish=yes' />
+              </object>
+          </div>
+          <script type='text/javascript'>
+            var divElement = document.getElementById('viz1522359091024');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width='100%';
+            vizElement.style.height='100%';
+            vizElement.style.overlap='auto';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+          </script>
+      </div>
+    </div>
+  </body>
+</html>
