@@ -15,6 +15,7 @@
   overflow: scroll;
   white-space: nowrap;
 	width: 100%;
+	z-index: 9999;
 }
 
 #header #TitleHead {
@@ -45,15 +46,21 @@
 
 #description {
 	overflow-y: scroll;
-	height: 1000px;
+	height: 2000px;
 	width: 100%;
-	margin: 10px 180px 0px 180px;
+	margin: 50px 180px 0px 180px;
   font-size: 15px;
   text-align: justify;
-	padding-top: 50px;
-	overflow: auto;
+	padding-top: 100px;
+	overflow: scroll;
+	position: relative;
 }
 
 #description #BodyText{
 	width:75%;
+}
+
+#Viz2 {
+	width: 750px;
+	height: 1200px;
 }
