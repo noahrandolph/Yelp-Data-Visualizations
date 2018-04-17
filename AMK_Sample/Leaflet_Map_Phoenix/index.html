@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
+    <title>"Phoenix Area"</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/viz.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/viz.css">
+</head>
+<body>
+  <div id="header">
+  <h2 id='TitleHead'>An Entrepreneur’s Scouting Tool</h2>
+    <div id="links">
+      <a href="index.html">About Our Project</a>
+      <a href="data.html">1.The Business Enviornment</a>
+      <a href="distribution.html">2.Exploring Locations</a>
+      <a href="../Leaflet_Map_Phoenix_AMK/index.html" class='active'>3.Where Should I Start My Business</a>
+<a href="us.html">The Team</a>
+    </div>
+  </div>
+  <div id="body">
+    <div class="form" id="the-basics">
+      <input class="typeahead" type="text" placeholder="Categories">
+    </div>
+
+    <div id="map"></div>
+
+    <div id="option">
+      <input name="Clear Map Button" type="button" value="Clear Map" onclick="clearMap()" />
+    </div>
+
+    <!-- page content -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/d3.v4.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.2.4"></script>
+    <script src="js/typeahead.bundle.js"></script>
+    <script src="js/typeahead.bundle.min.js"></script>
+    <script src="js/typeahead.jquery.js"></script>
+    <script src="js/typeahead.jquery.min.js"></script>
+    <script src="js/bloodhound.js"></script>
+    <script src="js/bloodhound.min.js"></script>
+    <script src="js/yelp_viz.js"></script>
+
+  </div>
+</body>
+
+</html>
