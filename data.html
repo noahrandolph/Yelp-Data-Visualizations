@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title="An Entrepreneur’s Scouting Tool">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/viz.css">
+  </head>
+  <body>
+    <div id="header">
+    <h2 id='TitleHead'>An Entrepreneur’s Scouting Tool</h2>
+      <div id="links">
+        <a href="index.html">About Our Project</a>
+        <a href="data.html" class='active'>1. The Business Environment</a>
+        <a href="distribution.html">2. Exploring Locations</a>
+         <a href="./Leaflet_Maps_VF/Leaflet_Map_VF_AZ/index.html">3. Business Recommendation Tool</a>
+	       <a href="us.html">The Team</a>
+      </div>
+    </div>
+    <div id="description">
+      <div id="BodyText">
+         <!-- <h3><u>The Business Environment</u></h3> -->
+        <!--<p>The below visualization allows users to interactively explore certain features of the Yelp Dataset in certain pre-defined areas of the United States. The first visualization allows uses to see the number of business types by star rating for each business in that area. The second graph allows users to filter business by a positive star rating, while the 3rd allows users to filter business who that are below a certain rating. </p>
+      </div> -->
+        <div class='tableauPlaceholder' id='Viz2'>
+          <noscript>
+            <a href='#'>
+              <img alt='Yelp Businesses' src='https://public.tableau.com/profile/noah.randolph#!/vizhome/CategoryRatingsandSizeBubbles/MiningYelpReviews?:showVizHome=no&:embed=true' style='border: none' />
+            </a>
+          </noscript>
+              <object class='tableauViz'  style='display:none;'>
+                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' />
+                <param name='site_root' value='' />
+                <param name='name' value='CategoryRatingsandSizeBubbles&#47;MiningYelpReviews' />
+                <param name='tabs' value='no' />
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https://public.tableau.com/profile/noah.randolph#!/vizhome/CategoryRatingsandSizeBubbles/MiningYelpReviews?:showVizHome=no&:embed=true' />
+                <param name='animate_transition' value='yes' />
+                <param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' />
+                <param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' />
+                <param name='filter' value='publish=yes' />
+              </object>
+          </div>
+          <script type='text/javascript'>
+            var divElement = document.getElementById('Viz2');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width='2000px';
+            vizElement.style.height='1500px';
+            vizElement.style.overlap='hide';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+          </script>
+    </div>
+  </body>
+</html>
