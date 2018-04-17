@@ -23,7 +23,7 @@
 	margin: 0;
 	vertical-align: middle;
 	float: left;
-	font-size: medium;
+	font-size: x-large;
 	position: fixed;
 	z-index: 1;
 	overflow: hidden;
@@ -60,7 +60,7 @@
   font-size: 15px;
   text-align: justify;
 	padding-top: 100px;
-	overflow: scroll;
+	overflow: hidden;
 	position: relative;
 }
 
