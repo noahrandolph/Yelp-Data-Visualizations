@@ -1,7 +1,7 @@
 var map = new L.Map("map", {
   zoomSnap: 0.25,
   center: [35.22, -80.84],
-  zoom: 10.5
+  zoom: 10.0
 })
 
 foo_list = [];
@@ -13,7 +13,7 @@ L.AwesomeMarkers.Icon.prototype.options.prefix = 'ion';
 
 function recommender(category) {
   category==$('input.typeahead.tt-input').val();
-  $.getJSON("/data/nc_grid_boxes_category_counts.json", function(boxdata){
+  $.getJSON("./data/nc_grid_boxes_category_counts.json", function(boxdata){
     console.log(boxdata);
     console.log(category);
 
@@ -21,7 +21,7 @@ function recommender(category) {
    if(boxdata[i].category_counts[String(category)]>0){return "green"}
    else if (boxdata[i].category_counts["no business found in this area"]==1) {return "#2262CC"}
    else {return "red"}
-    }; 
+    };
 
     var bounds = [[0, 0],[0, 0]];
     var new_square;
@@ -35,12 +35,12 @@ function recommender(category) {
         [boxdata[i].min_lat, boxdata[i].min_long],
         [boxdata[i].max_lat, boxdata[i].max_long]
         ];
-      new_square=L.rectangle(bounds, 
+      new_square=L.rectangle(bounds,
         { color: colorsorter(i, category),
           weight: 0.1,
           opacity: 0.6,
           fillOpacity: 0.3,
-          FillColor: colorsorter(i, category) 
+          FillColor: colorsorter(i, category)
         });
       squares_list.push(new_square)
       }};
@@ -128,16 +128,16 @@ $('#the-basics .typeahead').typeahead({
 
 
 function addtoMap() {
-  d3.csv("data/nc_data.csv", function(error, data) {
-    if (error) {console.log(error);} 
-    else { 
+  d3.csv("./data/nc_data.csv", function(error, data) {
+    if (error) {console.log(error);}
+    else {
       foo_list.push($('input.typeahead.tt-input').val());
       console.log(foo_list);
       layerholder = putPointsOnMap(foo_list, data);
       businesstype=foo_list[foo_list.length-1];
       $('#businesstypes').append('<tr><td>'+businesstype+'</td></tr>')
       };
-    
+
   });
 };
 
