@@ -32,6 +32,8 @@
 #header #links {
 	float: right;
   color: #0073bb;
+	height: 100%;
+	text-align: center;
 }
 
 #header a {
@@ -39,7 +41,9 @@
 	float: left;
 	color: white;
 	height: 100%;
+	/* padding: 15px; */
 	padding: 15px;
+	margin: 0px;
 	text-align: center;
 	font-size: small;
 	z-index: 2;
@@ -50,6 +54,8 @@
 #header a.active {
 	background-color: #0073bb;
 	color: white;
+	height: 100%;
+	border-color:#0073bb;
 }
 
 #description {
