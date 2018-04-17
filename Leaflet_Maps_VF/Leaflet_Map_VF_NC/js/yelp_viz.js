@@ -1,7 +1,7 @@
 var map = new L.Map("map", {
   zoomSnap: 0.25,
   center: [35.22, -80.84],
-  zoom: 10.0
+  zoom: 12.0
 })
 
 foo_list = [];
